@@ -6,6 +6,14 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 14 Oct 2024 13:28:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>whatever</title>
+      <link>http://localhost:1313/posts/</link>
+      <pubDate>Mon, 14 Oct 2024 13:28:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/</guid>
+      <description>&lt;p&gt;fsadfs&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
