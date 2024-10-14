@@ -6,13 +6,16 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"    
 
 collections:
-  - name: "dresses"
-    label: "Dresses"   
+-   name: "posts" 
+    label: "Posts"
     folder: "content/posts" 
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
+    path: "{{slug}}/index"
+    media_folder: "" 
+    public_folder: ""
+    create: true 
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", summary: "{{fields.tag}}", field: { label: "Tag", name: "tag", widget: "string" }}
+      - { label: "Body", name: "body", widget: "markdown", hint: "Make sure to name added image as thumbnail" }
